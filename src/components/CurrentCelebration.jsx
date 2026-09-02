@@ -6,7 +6,7 @@ import HistoryTransition from './HistoryTransition';
 
 export default function CurrentCelebration() {
   return (
-    <section id="journey" className="relative w-full bg-[#FAF3E0] overflow-hidden pt-4">
+    <section id="journey" className="relative w-full bg-transparent overflow-hidden pt-4">
       
       {/* 1. INTRO & VENUE INFO */}
       <CelebrationIntro />

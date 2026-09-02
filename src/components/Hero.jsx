@@ -63,13 +63,8 @@ export default function Hero() {
   return (
     <section 
       id="home"
-      className="relative min-h-[100svh] w-full bg-[#FAF3E0] flex flex-col justify-between pt-24 md:pt-28 lg:pt-30 pb-4 overflow-hidden select-none"
+      className="relative min-h-[100svh] w-full bg-transparent flex flex-col justify-between pt-24 md:pt-28 lg:pt-30 pb-4 overflow-hidden select-none"
     >
-      {/* HERO MANDALA BACKGROUND */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-multiply pointer-events-none"
-        style={{ backgroundImage: `url(${bgMandala})` }}
-      />
 
       {/* ELEGANT GOLD CORNER MANDALAS & ACCENTS */}
       <FloralDecorations />
