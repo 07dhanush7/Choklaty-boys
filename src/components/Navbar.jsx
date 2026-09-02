@@ -7,10 +7,8 @@ const NAV_ITEMS = [
   { label: 'HOME', href: '#home' },
   { label: 'JOURNEY', href: '#journey' },
   { label: 'OUR GANESH', href: '#our-ganesh' },
-  { label: 'EVENTS', href: '#events' },
   { label: 'MEMORIES', href: '#memories' },
   { label: 'TEAM', href: '#team' },
-  { label: 'VIDEOS', href: '#videos' },
   { label: 'CONTACT', href: '#contact' }
 ];
 
