@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import CurrentCelebration from './components/CurrentCelebration';
+import Current2026 from './components/Current2026';
 import bgMandala from './assets/background.png';
 
 export default function App() {
@@ -20,8 +20,8 @@ export default function App() {
       <main className="relative z-10">
         <Hero />
 
-        {/* STEP 03 — CURRENT 2026 CELEBRATION SECTION */}
-        <CurrentCelebration />
+        {/* 2026 — OUR 12TH YEAR SECTION */}
+        <Current2026 />
       </main>
     </div>
   );

@@ -1,80 +1,165 @@
 export const PROGRAMME_DATA = [
   {
     day: 1,
+    dayFormatted: "DAY 01",
     date: "14 SEP 2026",
+    dateNumber: "14",
     weekday: "MONDAY",
-    iconName: "Flame",
-    highlight: "GANESHA HOMAM",
-    events: [
-      { time: "6:30 PM", title: "GANESHA HOMAM", detail: "Opening sacred fire ritual for divine blessings" },
-      { time: "8:00 PM", title: "MAHA MANGALA AARATHI & PRASADAM VINIYOGAM", detail: "Evening prayers & holy prasadam distribution" }
+    sessions: [
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "6:30 PM",
+        title: "Ganesha Homam",
+        iconType: "homam"
+      },
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "8:00 PM",
+        title: "Maha Mangala Aarathi & Prasadam Viniyogam",
+        iconType: "aarathi"
+      }
     ]
   },
   {
     day: 2,
+    dayFormatted: "DAY 02",
     date: "15 SEP 2026",
+    dateNumber: "15",
     weekday: "TUESDAY",
-    iconName: "Sun",
-    highlight: "MORNING & EVENING POOJA",
-    events: [
-      { time: "9:30 AM", title: "MORNING POOJA", detail: "Daily morning archana & alankaram" },
-      { time: "7:30 PM", title: "EVENING MAHA MANGALA AARATHI", detail: "Grand evening illumination & prayers" }
+    sessions: [
+      {
+        session: "MORNING",
+        type: "MORNING",
+        time: "9:30 AM",
+        title: "Pooja",
+        iconType: "pooja"
+      },
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "7:30 PM",
+        title: "Maha Mangala Aarathi",
+        iconType: "aarathi"
+      }
     ]
   },
   {
     day: 3,
+    dayFormatted: "DAY 03",
     date: "16 SEP 2026",
+    dateNumber: "16",
     weekday: "WEDNESDAY",
-    iconName: "Sparkles",
-    highlight: "SPECIAL ALANKARAM",
-    events: [
-      { time: "9:00 AM", title: "POOJA", detail: "Special morning flower offering & stotram" },
-      { time: "7:30 PM", title: "EVENING MAHA MANGALA AARATHI", detail: "Evening aarathi with community chanting" }
+    sessions: [
+      {
+        session: "MORNING",
+        type: "MORNING",
+        time: "9:00 AM",
+        title: "Pooja",
+        iconType: "pooja"
+      },
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "7:30 PM",
+        title: "Maha Mangala Aarathi",
+        iconType: "aarathi"
+      }
     ]
   },
   {
     day: 4,
+    dayFormatted: "DAY 04",
     date: "17 SEP 2026",
+    dateNumber: "17",
     weekday: "THURSDAY",
-    iconName: "Heart",
-    highlight: "GOMATHA POOJA",
-    events: [
-      { time: "9:30 AM", title: "POOJA", detail: "Morning rituals & bhajan offerings" },
-      { time: "7:00 PM", title: "GOMATHA POOJA", detail: "Sacred cow worship for prosperity & harmony" },
-      { time: "8:00 PM", title: "MAHA MANGALA AARATHI", detail: "Followed by Maha Mangala Aarathi" }
+    sessions: [
+      {
+        session: "MORNING",
+        type: "MORNING",
+        time: "9:30 AM",
+        title: "Pooja",
+        iconType: "pooja"
+      },
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "7:00 PM",
+        title: "Gomatha Pooja",
+        subtitle: "Followed by Maha Mangala Aarathi",
+        iconType: "cow"
+      }
     ]
   },
   {
     day: 5,
+    dayFormatted: "DAY 05",
     date: "18 SEP 2026",
+    dateNumber: "18",
     weekday: "FRIDAY",
-    iconName: "Flower2",
-    highlight: "GRAND FRIDAY POOJA",
-    events: [
-      { time: "9:00 AM", title: "POOJA", detail: "Morning abhishekam & laksharchana" },
-      { time: "7:30 PM", title: "EVENING MAHA MANGALA AARATHI", detail: "Special Friday evening aarathi" }
+    sessions: [
+      {
+        session: "MORNING",
+        type: "MORNING",
+        time: "9:00 AM",
+        title: "Pooja",
+        iconType: "pooja"
+      },
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "7:30 PM",
+        title: "Maha Mangala Aarathi",
+        iconType: "aarathi"
+      }
     ]
   },
   {
     day: 6,
+    dayFormatted: "DAY 06",
     date: "19 SEP 2026",
+    dateNumber: "19",
     weekday: "SATURDAY",
-    iconName: "Music",
-    highlight: "BHARATHANATYAM PERFORMANCE",
-    events: [
-      { time: "6:00 PM", title: "BHARATHANATYAM", detail: "Classical devotional dance performance" },
-      { time: "7:30 PM", title: "MAHA MANGALA AARATHI", detail: "Evening aarathi & cultural celebration" }
+    sessions: [
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "6:00 PM",
+        title: "Bharatanatyam Performance",
+        iconType: "dance"
+      },
+      {
+        session: "EVENING",
+        type: "EVENING",
+        time: "7:30 PM",
+        title: "Maha Mangala Aarathi",
+        iconType: "aarathi"
+      }
     ]
   },
   {
     day: 7,
+    dayFormatted: "DAY 07",
     date: "20 SEP 2026",
+    dateNumber: "20",
     weekday: "SUNDAY",
-    iconName: "PartyPopper",
-    highlight: "GRAND PROCESSION",
-    events: [
-      { time: "11:00 AM", title: "MAHA MANGALA AARATHI", detail: "Final festival morning aarathi" },
-      { time: "3:00 PM", title: "GANESHA PROCESSION WITH BAND & CRACKERS", detail: "CB welcomes you to join the grand Ganesha procession with live band & fireworks" }
+    sessions: [
+      {
+        session: "MORNING",
+        type: "MORNING",
+        time: "11:00 AM",
+        title: "Maha Mangala Aarathi",
+        iconType: "aarathi"
+      },
+      {
+        session: "AFTERNOON",
+        type: "AFTERNOON",
+        time: "3:00 PM",
+        title: "Ganesha Procession",
+        subtitle: "With live band & crackers",
+        iconType: "procession"
+      }
     ]
   }
 ];

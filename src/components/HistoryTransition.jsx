@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
+import { FESTIVAL_INFO } from '../data/festival';
 
 export default function HistoryTransition() {
   return (
-    <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+    <div className="w-full pt-16 pb-20 text-center relative z-10">
       
-      {/* DECORATIVE LINE ACCENT */}
+      {/* DECORATIVE TOP DIVIDER */}
       <motion.div
         initial={{ opacity: 0, scaleX: 0 }}
         whileInView={{ opacity: 1, scaleX: 1 }}
@@ -18,40 +20,39 @@ export default function HistoryTransition() {
         <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent via-[#C5A059]/60 to-[#C5A059]" />
       </motion.div>
 
-      {/* PRIMARY TRANSITION HEADING */}
-      <motion.h4
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.1 }}
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-[#4A1521] font-playfair tracking-wide uppercase leading-tight"
-      >
-        BUT THIS JOURNEY STARTED<br className="hidden sm:inline" />
-        <span className="text-gold-gradient font-serif ml-1 sm:ml-2">LONG BEFORE 2026...</span>
-      </motion.h4>
-
-      {/* SECONDARY SUBHEADING */}
+      {/* PRIMARY TRANSITION QUOTE */}
       <motion.p
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.2 }}
-        className="mt-4 text-base sm:text-lg md:text-xl font-extrabold text-[#8B6B38] font-cinzel tracking-[0.2em] uppercase"
+        transition={{ duration: 0.7 }}
+        className="text-base sm:text-xl md:text-2xl font-serif font-bold text-[#4A1521] uppercase tracking-wider font-playfair"
       >
-        11 YEARS BEHIND US.
+        "{FESTIVAL_INFO.transition.quote}"
       </motion.p>
 
-      {/* DOWNWARD ACCENT DOTS */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
+      {/* SECONDARY YEARS SUBTITLE */}
+      <motion.h4
+        initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        className="mt-8 flex flex-col items-center space-y-2 text-[#C5A059]"
+        transition={{ duration: 0.7, delay: 0.15 }}
+        className="text-xl sm:text-2xl md:text-3xl font-black text-[#8B6B38] font-cinzel tracking-[0.2em] uppercase pt-2"
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]/80" />
-        <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]/50" />
-        <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]/25" />
+        {FESTIVAL_INFO.transition.years}
+      </motion.h4>
+
+      {/* SUBTLE DOWNWARD ARROW INDICATOR */}
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        whileInView={{ opacity: 1, y: [0, 6, 0] }}
+        viewport={{ once: true }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        className="pt-8 flex justify-center text-[#C5A059]"
+      >
+        <div className="p-2 rounded-full border border-[#C5A059]/40 bg-[#FAF6EE]/80">
+          <ChevronDown className="w-5 h-5 text-[#4A1521]" />
+        </div>
       </motion.div>
 
     </div>
