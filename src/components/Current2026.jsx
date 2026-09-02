@@ -7,7 +7,7 @@ import HistoryTransition from './HistoryTransition';
 
 export default function Current2026() {
   return (
-    <section id="journey" className="relative w-full bg-transparent overflow-hidden pt-12 pb-8">
+    <section id="journey" className="relative w-full bg-transparent overflow-hidden pt-14 sm:pt-18 pb-12">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -15,7 +15,7 @@ export default function Current2026() {
         <CelebrationIntro />
 
         {/* 2. ASYMMETRICAL TWO-COLUMN LAYOUT (LEFT 40% / RIGHT 60%) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           
           {/* LEFT COLUMN: GANESH IMAGE + SACRED VENUE (40% WIDTH / COLS 1-5 DESKTOP) */}
           <div className="lg:col-span-5 w-full">
