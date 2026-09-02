@@ -1,10 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, ArrowUpRight } from 'lucide-react';
+import { MapPin, ArrowUpRight, ArrowRight } from 'lucide-react';
 import ganeshImg from '../assets/Ganesh.png';
 import { FESTIVAL_INFO } from '../data/festival';
 
 export default function VenueInfo() {
+  const handleProcessionClick = (e) => {
+    e.preventDefault();
+    const el = document.querySelector('#procession');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -66,8 +72,8 @@ export default function VenueInfo() {
           </p>
         </div>
 
-        {/* MINIMAL EDITORIAL TEXT LINK BUTTON */}
-        <div className="pt-2">
+        {/* EDITORIAL TEXT LINKS ROW */}
+        <div className="pt-3 border-t border-[#C5A059]/20 flex flex-wrap items-center justify-between gap-2.5">
           <a
             href={FESTIVAL_INFO.venue.directionsUrl}
             target="_blank"
@@ -76,6 +82,15 @@ export default function VenueInfo() {
           >
             <span>GET DIRECTIONS</span>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-[#C5A059]" />
+          </a>
+
+          <a
+            href="#procession"
+            onClick={handleProcessionClick}
+            className="group inline-flex items-center space-x-1.5 text-xs font-bold tracking-[0.14em] uppercase text-[#4A1521] hover:text-[#C5A059] transition-colors font-sans"
+          >
+            <span>GRAND PROCESSION • 20 SEP</span>
+            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 text-[#C5A059]" />
           </a>
         </div>
       </div>

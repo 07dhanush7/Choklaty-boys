@@ -10,6 +10,7 @@ export default function ProcessionHighlight() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
+      id="procession"
       className="w-full mt-16 sm:mt-24 md:mt-28 mb-12 sm:mb-16"
     >
       <div className="relative rounded-2xl border border-[#C5A059]/40 bg-[#3D0F19] text-[#FAF6EE] overflow-hidden p-8 sm:p-10 md:p-12 text-center shadow-xl group">
