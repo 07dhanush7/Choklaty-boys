@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import CurrentCelebration from './components/CurrentCelebration';
 
 export default function App() {
   return (
@@ -8,24 +9,12 @@ export default function App() {
       {/* NAVBAR */}
       <Navbar />
 
-      {/* HERO SECTION */}
+      {/* HERO SECTION & 2026 CELEBRATION SECTION */}
       <main>
         <Hero />
 
-        {/* PLACEHOLDER ANCHOR FOR SCROLL INDICATOR (#journey) */}
-        <section 
-          id="journey" 
-          className="min-h-[30vh] bg-[#FAF6EE] border-t border-[#8B6B38]/15 flex items-center justify-center p-8 text-center"
-        >
-          <div className="max-w-md space-y-2 opacity-60">
-            <span className="text-xs font-semibold tracking-widest text-[#8B6B38] uppercase font-cinzel">
-              THE JOURNEY CONTINUES
-            </span>
-            <h2 className="text-xl font-serif text-[#4A1521] font-playfair">
-              #journey section anchor
-            </h2>
-          </div>
-        </section>
+        {/* STEP 03 — CURRENT 2026 CELEBRATION SECTION */}
+        <CurrentCelebration />
       </main>
     </div>
   );
