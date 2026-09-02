@@ -2,7 +2,6 @@ import React from 'react';
 import CelebrationIntro from './CelebrationIntro';
 import VenueInfo from './VenueInfo';
 import ProgrammeTimeline from './ProgrammeTimeline';
-import ProcessionHighlight from './ProcessionHighlight';
 import HistoryTransition from './HistoryTransition';
 
 export default function Current2026() {
@@ -15,9 +14,9 @@ export default function Current2026() {
         <CelebrationIntro />
 
         {/* 2. ASYMMETRICAL TWO-COLUMN LAYOUT (LEFT 40% / RIGHT 60%) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start mb-12">
           
-          {/* LEFT COLUMN: GANESH IMAGE + SACRED VENUE (40% WIDTH / COLS 1-5 DESKTOP) */}
+          {/* LEFT COLUMN: GANESH IMAGE + SACRED VENUE & PROCESSION CARDS (40% WIDTH / COLS 1-5 DESKTOP) */}
           <div className="lg:col-span-5 w-full">
             <VenueInfo />
           </div>
@@ -29,10 +28,7 @@ export default function Current2026() {
 
         </div>
 
-        {/* 3. GRAND PROCESSION CINEMATIC STRIP */}
-        <ProcessionHighlight />
-
-        {/* 4. EDITORIAL TRANSITION TO HISTORY */}
+        {/* 3. EDITORIAL TRANSITION TO HISTORY */}
         <HistoryTransition />
 
       </div>
