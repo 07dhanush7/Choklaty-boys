@@ -42,7 +42,7 @@ export default function CelebrationIntro() {
         transition={{ duration: 0.7, delay: 0.2 }}
         className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-serif font-extrabold text-gold-gradient tracking-[0.16em] uppercase font-playfair leading-tight mb-3"
       >
-        12TH GANESH CHATURTHI CELEBRATION
+        GANESH CHATURTHI CELEBRATION
       </motion.h3>
 
       {/* 4. DATES BANNER */}
