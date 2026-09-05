@@ -6,11 +6,11 @@ import ProgrammeDay from './ProgrammeDay';
 import ProgrammeModal from './ProgrammeModal';
 
 export default function ProgrammeTimeline() {
-  // Default selected day: DAY 2 — 15 SEP 2026
-  const [selectedDay, setSelectedDay] = useState(2);
+  // Default selected day: DAY 1 — 14 SEP 2026
+  const [selectedDay, setSelectedDay] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const activeDayData = PROGRAMME_DATA.find((d) => d.day === selectedDay) || PROGRAMME_DATA[1];
+  const activeDayData = PROGRAMME_DATA.find((d) => d.day === selectedDay) || PROGRAMME_DATA[0];
 
   return (
     <motion.div
