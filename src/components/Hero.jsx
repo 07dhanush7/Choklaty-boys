@@ -84,7 +84,7 @@ export default function Hero() {
               <div className="hidden sm:block h-[1.5px] w-8 sm:w-20 md:w-28 lg:w-36 bg-gradient-to-r from-transparent via-[#C5A059]/70 to-[#C5A059]" />
               <span className="text-xs sm:text-sm text-[#C5A059]">✦</span>
               <span className="text-[11px] sm:text-base md:text-lg lg:text-xl font-extrabold tracking-[0.14em] sm:tracking-[0.24em] font-cinzel text-[#8B6B38] uppercase">
-                CHOKLATTY BOYZ • SINCE 2015
+                CHOKLATY BOYZ • SINCE 2015
               </span>
               <span className="text-xs sm:text-sm text-[#C5A059]">✦</span>
               <div className="hidden sm:block h-[1.5px] w-8 sm:w-20 md:w-28 lg:w-36 bg-gradient-to-l from-transparent via-[#C5A059]/70 to-[#C5A059]" />

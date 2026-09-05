@@ -30,12 +30,12 @@ const MEMORIES_MEDIA = [
     type: "PHOTO",
     category: "GROUP_PHOTO",
     year: "2025",
-    title: "Choklatty Boyz 2025 Core Group Photo",
+    title: "Choklaty Boyz 2025 Core Group Photo",
     subtitle: "Swarnakuppam Youth Brotherhood • Chapter 11",
     image: group2025,
     members: "40+ Group Members",
     tag: "GROUP PHOTO",
-    description: "Official annual commemorative group photograph of Choklatty Boyz members, elders, and volunteers at Chapter 11 Sthapana Puja."
+    description: "Official annual commemorative group photograph of Choklaty Boyz members, elders, and volunteers at Chapter 11 Sthapana Puja."
   },
   {
     id: 2,
@@ -43,19 +43,19 @@ const MEMORIES_MEDIA = [
     category: "VIDEO_CLIP",
     year: "2025",
     title: "Celebration of 2025",
-    subtitle: "Choklatty Boyz Swarnakuppam • Chapter 11",
+    subtitle: "Choklaty Boyz Swarnakuppam • Chapter 11",
     image: img2025,
     videoUrl: video2025,
     tag: "VIDEO MEMORY",
     members: "Chapter 11",
-    description: "Official 2025 video memory capturing the devotion, grand celebration, evening Aarti, and togetherness of Choklatty Boyz Swarnakuppam."
+    description: "Official 2025 video memory capturing the devotion, grand celebration, evening Aarti, and togetherness of Choklaty Boyz Swarnakuppam."
   },
   {
     id: 3,
     type: "PHOTO",
     category: "GROUP_PHOTO",
     year: "2024",
-    title: "Choklatty Boyz 2024 Group Assembly",
+    title: "Choklaty Boyz 2024 Group Assembly",
     subtitle: "Decade Celebration Brotherhood • Chapter 10",
     image: group2024,
     members: "50+ Devotees & Members",
@@ -68,7 +68,7 @@ const MEMORIES_MEDIA = [
     category: "VIDEO_CLIP",
     year: "2024",
     title: "Celebration of 2024",
-    subtitle: "Choklatty Boyz Swarnakuppam • Chapter 10",
+    subtitle: "Choklaty Boyz Swarnakuppam • Chapter 10",
     image: img2024,
     videoUrl: video2024,
     tag: "VIDEO MEMORY",
@@ -80,12 +80,12 @@ const MEMORIES_MEDIA = [
     type: "PHOTO",
     category: "GROUP_PHOTO",
     year: "2023",
-    title: "Choklatty Boyz 2023 Group Photo",
+    title: "Choklaty Boyz 2023 Group Photo",
     subtitle: "Pandal Setup & Seva Team • Chapter 09",
     image: group2023,
     members: "30+ Volunteers",
     tag: "GROUP PHOTO",
-    description: "Choklatty Boyz stage & decoration team after completing the eco-friendly floral pandal theme."
+    description: "Choklaty Boyz stage & decoration team after completing the eco-friendly floral pandal theme."
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ const MEMORIES_MEDIA = [
     category: "VIDEO_CLIP",
     year: "2023",
     title: "Celebration of 2023",
-    subtitle: "Choklatty Boyz Swarnakuppam • Chapter 09",
+    subtitle: "Choklaty Boyz Swarnakuppam • Chapter 09",
     image: img2023,
     videoUrl: video2023,
     tag: "VIDEO MEMORY",
@@ -107,7 +107,7 @@ const MEMORIES_MEDIA = [
     category: "VIDEO_CLIP",
     year: "2022",
     title: "Celebration of 2022",
-    subtitle: "Choklatty Boyz Swarnakuppam • Chapter 08",
+    subtitle: "Choklaty Boyz Swarnakuppam • Chapter 08",
     image: img2022,
     videoUrl: video2022,
     tag: "VIDEO MEMORY",
@@ -119,12 +119,12 @@ const MEMORIES_MEDIA = [
     type: "PHOTO",
     category: "GROUP_PHOTO",
     year: "2016",
-    title: "Choklatty Boyz 2016 Group Photo",
+    title: "Choklaty Boyz 2016 Group Photo",
     subtitle: "2nd Year Festival Assembly • Chapter 02",
     image: group2016,
     members: "25+ Founding Youth",
     tag: "GROUP PHOTO",
-    description: "Cherished early group photo of Choklatty Boyz during the 2016 Chapter 02 celebrations."
+    description: "Cherished early group photo of Choklaty Boyz during the 2016 Chapter 02 celebrations."
   }
 ];
 
@@ -161,7 +161,7 @@ export default function MemoriesSection() {
           </h2>
 
           <p className="text-xs sm:text-sm md:text-base text-[#5C4535] leading-relaxed font-body font-light">
-            Cherished group photographs, youth assemblies, Dhol Tasha procession videos, and festive memories of <strong className="font-bold text-[#4A1521]">Choklatty Boyz Swarnakuppam</strong> since 2015.
+            Cherished group photographs, youth assemblies, Dhol Tasha procession videos, and festive memories of <strong className="font-bold text-[#4A1521]">Choklaty Boyz Swarnakuppam</strong> since 2015.
           </p>
 
           {/* MEDIA FILTER SWITCHER BUTTONS */}
@@ -374,7 +374,7 @@ export default function MemoriesSection() {
                 {/* MODAL FOOTER */}
                 <div className="bg-[#FAF3E0] px-6 py-3.5 border-t border-[#C5A059]/30 flex items-center justify-between">
                   <span className="text-xs text-[#8B6B38] font-mono">
-                    Choklatty Boyz Swarnakuppam Archive
+                    Choklaty Boyz Swarnakuppam Archive
                   </span>
                   <button
                     type="button"

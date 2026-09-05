@@ -200,7 +200,7 @@ export default function HistoryModal({ isOpen, data, onClose }) {
           {/* FOOTER STRIP */}
           <div className="bg-[#FAF3E0] px-6 py-4 border-t border-[#C5A059]/30 flex items-center justify-between">
             <span className="text-xs text-[#8B6B38] font-mono">
-              Choklatty Boyz KGF • {data.chapter} Archive
+              Choklaty Boyz KGF • {data.chapter} Archive
             </span>
 
             <button

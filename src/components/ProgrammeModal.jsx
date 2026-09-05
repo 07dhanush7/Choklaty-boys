@@ -175,7 +175,7 @@ export default function ProgrammeModal({ isOpen, onClose }) {
 
             {/* FOOTER */}
             <div className="mt-8 pt-4 border-t border-[#C5A059]/25 text-center text-xs text-[#8B6B38] font-sans">
-              ✦ CHOKLATTY BOYZ K.G.F. • ALL DEVOTEES WELCOME ✦
+              ✦ CHOKLATY BOYZ K.G.F. • ALL DEVOTEES WELCOME ✦
             </div>
           </motion.div>
         </div>

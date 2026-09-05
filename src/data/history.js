@@ -118,7 +118,7 @@ export const HISTORY_DATA = [
     chapterNumber: 5,
     title: "HALF A DECADE OF CELEBRATION",
     subtitle: "Five Years of Brotherhood",
-    description: "Memories from our journey through the fifth year of grand celebrations in KGF, establishing Choklatty Boyz as a pillar of festive unity.",
+    description: "Memories from our journey through the fifth year of grand celebrations in KGF, establishing Choklaty Boyz as a pillar of festive unity.",
     image: img2019,
     memoriesCount: 14,
     highlights: [
@@ -150,7 +150,7 @@ export const HISTORY_DATA = [
     chapterNumber: 3,
     title: "STRENGTHENING OUR TRADITION",
     subtitle: "Building Lasting Bonds",
-    description: "Memories from our journey through the third chapter of Choklatty Boyz festival history, formalizing our annual schedule and volunteer teams.",
+    description: "Memories from our journey through the third chapter of Choklaty Boyz festival history, formalizing our annual schedule and volunteer teams.",
     image: img2017,
     memoriesCount: 9,
     highlights: [
@@ -182,7 +182,7 @@ export const HISTORY_DATA = [
     chapterNumber: 1,
     title: "WHERE IT ALL BEGAN",
     subtitle: "The Genesis of Our Tradition",
-    description: "The foundation of Choklatty Boyz KGF Ganesh Festival. The very first spark of devotion, friendship, and faith that started an 11-year legacy.",
+    description: "The foundation of Choklaty Boyz KGF Ganesh Festival. The very first spark of devotion, friendship, and faith that started an 11-year legacy.",
     image: img2015,
     memoriesCount: 10,
     highlights: [

@@ -58,12 +58,12 @@ export default function Navbar() {
           >
             <img
               src={logoImg}
-              alt="Choklatty Boyz Logo"
+              alt="Choklaty Boyz Logo"
               className="h-11 sm:h-14 md:h-18 lg:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
             />
             <div className="flex flex-col text-left leading-none">
               <span className="text-xs sm:text-base md:text-lg font-black tracking-[0.12em] sm:tracking-[0.16em] font-cinzel text-[#4A1521] uppercase group-hover:text-[#8B6B38] transition-colors">
-                CHOKLATTY BOYZ
+                CHOKLATY BOYZ
               </span>
               <span className="text-[9px] sm:text-[11px] md:text-[12px] font-bold tracking-[0.18em] sm:tracking-[0.22em] font-marcellus text-[#8B6B38] uppercase mt-0.5 sm:mt-1">
                 SINCE 2015
@@ -170,12 +170,12 @@ export default function Navbar() {
               <div className="flex items-center space-x-3">
                 <img
                   src={logoImg}
-                  alt="Choklatty Boyz Logo"
+                  alt="Choklaty Boyz Logo"
                   className="h-14 sm:h-18 w-auto object-contain mix-blend-multiply"
                 />
                 <div className="flex flex-col text-left leading-none">
                   <span className="text-base sm:text-lg font-black tracking-[0.16em] font-cinzel text-[#4A1521] uppercase">
-                    CHOKLATTY BOYZ
+                    CHOKLATY BOYZ
                   </span>
                   <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.22em] font-marcellus text-[#8B6B38] uppercase mt-1">
                     SINCE 2015

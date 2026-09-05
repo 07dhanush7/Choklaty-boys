@@ -116,7 +116,7 @@ export default function MemoryVideoModal({ isOpen, videoUrl, posterUrl, title, s
           {/* FOOTER */}
           <div className="bg-[#2B0A11] px-6 py-3 border-t border-[#C5A059]/30 flex items-center justify-between">
             <span className="text-xs text-[#C5A059] font-mono">
-              Choklatty Boyz Swarnakuppam • {chapter || 'Chapter 11'} Video Archive
+              Choklaty Boyz Swarnakuppam • {chapter || 'Chapter 11'} Video Archive
             </span>
 
             <button

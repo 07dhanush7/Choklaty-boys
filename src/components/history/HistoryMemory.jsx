@@ -145,7 +145,7 @@ export default function HistoryMemory({ data, onPrevYear, onNextYear, onOpenArch
                       {!imgError ? (
                         <img
                           src={data.image}
-                          alt={`Choklatty Boyz KGF Ganesh Festival ${data.year} celebration`}
+                          alt={`Choklaty Boyz KGF Ganesh Festival ${data.year} celebration`}
                           onError={() => setImgError(true)}
                           className="w-full h-full object-cover object-center absolute inset-0 transition-transform duration-700 hover:scale-105"
                         />

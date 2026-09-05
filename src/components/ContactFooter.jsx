@@ -22,10 +22,10 @@ export default function ContactFooter() {
           {/* BRAND COLUMN (COLS 1-5) */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={logoImg} alt="Choklatty Boyz Logo" className="h-16 w-auto object-contain mix-blend-screen" />
+              <img src={logoImg} alt="Choklaty Boyz Logo" className="h-16 w-auto object-contain mix-blend-screen" />
               <div className="flex flex-col text-left leading-none">
                 <span className="text-xl font-black tracking-[0.16em] font-cinzel text-[#FAF3E0] uppercase">
-                  CHOKLATTY BOYZ
+                  CHOKLATY BOYZ
                 </span>
                 <span className="text-xs font-bold tracking-[0.22em] font-marcellus text-[#D4AF37] uppercase mt-1">
                   SINCE 2015 • K.G.F.
@@ -47,7 +47,7 @@ export default function ContactFooter() {
                   href="https://youtube.com/@cbkgf?si=CfwMXUSZR0YyTjA6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Choklatty Boyz KGF YouTube Channel"
+                  aria-label="Choklaty Boyz KGF YouTube Channel"
                   className="inline-flex items-center space-x-2 bg-[#FF0000]/20 hover:bg-[#FF0000] text-[#FAF3E0] border border-[#FF0000]/40 px-3.5 py-1.5 rounded-xl text-xs font-bold font-cinzel tracking-wider uppercase transition-all shadow-md active:scale-95 group"
                 >
                   <YoutubeIcon className="w-4 h-4 text-[#FF4D4D] group-hover:text-white transition-colors" />
@@ -58,7 +58,7 @@ export default function ContactFooter() {
                   href="https://www.instagram.com/choklatyboyzkgf?igsh=MTVqOGllc3FjaGdlag=="
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Choklatty Boyz KGF Instagram Page"
+                  aria-label="Choklaty Boyz KGF Instagram Page"
                   className="inline-flex items-center space-x-2 bg-[#E1306C]/20 hover:bg-[#E1306C] text-[#FAF3E0] border border-[#E1306C]/40 px-3.5 py-1.5 rounded-xl text-xs font-bold font-cinzel tracking-wider uppercase transition-all shadow-md active:scale-95 group"
                 >
                   <InstagramIcon className="w-4 h-4 text-[#FF69B4] group-hover:text-white transition-colors" />
@@ -115,7 +115,7 @@ export default function ContactFooter() {
         {/* BOTTOM COPYRIGHT STRIP */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#C5A059]/80 gap-4">
           <p className="font-mono text-[11px]">
-            © 2015 – 2026 Choklatty Boyz Swarnakuppam, K.G.F. All Rights Reserved.
+            © 2015 – 2026 Choklaty Boyz Swarnakuppam, K.G.F. All Rights Reserved.
           </p>
 
           <div className="flex items-center space-x-2 text-[11px] font-sans">

@@ -69,7 +69,7 @@ export default function FloralDecorations() {
       {/* Subtle Background Watermark Text Accent */}
       <div className="absolute bottom-4 right-8 opacity-15 text-[#8B6B38] hidden lg:block select-none">
         <span className="text-[11px] font-bold tracking-[0.3em] font-cinzel uppercase">
-          CHOKLATTY BOYZ • SINCE 2015
+          CHOKLATY BOYZ • SINCE 2015
         </span>
       </div>
     </div>
