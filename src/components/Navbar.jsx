@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { YoutubeIcon, InstagramIcon } from './SocialIcons';
 import logoImg from '../assets/logo.png';
 
 const NAV_ITEMS = [
   { label: 'HOME', href: '#home' },
   { label: 'JOURNEY', href: '#journey' },
-  { label: 'OUR GANESH', href: '#our-ganesh' },
   { label: 'MEMORIES', href: '#memories' },
-  { label: 'TEAM', href: '#team' },
   { label: 'CONTACT', href: '#contact' }
 ];
 
@@ -49,24 +48,24 @@ export default function Navbar() {
             : 'bg-[#FAF3E0]/88 backdrop-blur-sm shadow-md border-[#C5A059]/25 py-2 md:py-2.5'
         }`}
       >
-        <div className="w-full px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+        <div className="w-full px-3 sm:px-6 lg:px-8 flex items-center justify-between h-14 sm:h-16 md:h-20">
           
           {/* NAVBAR LEFT: LOGO & BRAND NAME */}
           <a 
             href="#home" 
             onClick={(e) => handleNavClick(e, { label: 'HOME', href: '#home' })}
-            className="flex items-center space-x-3 focus:outline-none group py-1"
+            className="flex items-center space-x-2 sm:space-x-3 focus:outline-none group py-1"
           >
             <img
               src={logoImg}
               alt="Choklatty Boyz Logo"
-              className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
+              className="h-11 sm:h-14 md:h-18 lg:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
             />
             <div className="flex flex-col text-left leading-none">
-              <span className="text-sm sm:text-base md:text-lg font-black tracking-[0.16em] font-cinzel text-[#4A1521] uppercase group-hover:text-[#8B6B38] transition-colors">
+              <span className="text-xs sm:text-base md:text-lg font-black tracking-[0.12em] sm:tracking-[0.16em] font-cinzel text-[#4A1521] uppercase group-hover:text-[#8B6B38] transition-colors">
                 CHOKLATTY BOYZ
               </span>
-              <span className="text-[10px] sm:text-[11px] md:text-[12px] font-bold tracking-[0.22em] font-marcellus text-[#8B6B38] uppercase mt-1">
+              <span className="text-[9px] sm:text-[11px] md:text-[12px] font-bold tracking-[0.18em] sm:tracking-[0.22em] font-marcellus text-[#8B6B38] uppercase mt-0.5 sm:mt-1">
                 SINCE 2015
               </span>
             </div>
@@ -106,18 +105,38 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* NAVBAR RIGHT: 12TH YEAR BADGE (DESKTOP) */}
-          <div className="hidden md:flex items-center">
-            <div className="bg-[#4A1521] text-[#FAF6EE] px-4 py-2 rounded-lg border border-[#C5A059]/40 shadow-sm flex items-center space-x-3 w-36 lg:w-40 justify-between select-none transition-all duration-300 hover:shadow-md hover:border-[#C5A059]">
+          {/* NAVBAR RIGHT: SOCIAL LINKS & 12TH YEAR BADGE (DESKTOP) */}
+          <div className="hidden md:flex items-center space-x-2.5">
+            <a
+              href="https://youtube.com/@cbkgf?si=CfwMXUSZR0YyTjA6"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="YouTube @cbkgf"
+              className="w-9 h-9 rounded-lg bg-[#4A1521] border border-[#C5A059]/40 flex items-center justify-center text-[#E6C687] hover:bg-[#FF0000] hover:text-white transition-all shadow-sm active:scale-95 cursor-pointer"
+            >
+              <YoutubeIcon className="w-4 h-4" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/choklatyboyzkgf?igsh=MTVqOGllc3FjaGdlag=="
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram @choklatyboyzkgf"
+              className="w-9 h-9 rounded-lg bg-[#4A1521] border border-[#C5A059]/40 flex items-center justify-center text-[#E6C687] hover:bg-[#E1306C] hover:text-white transition-all shadow-sm active:scale-95 cursor-pointer"
+            >
+              <InstagramIcon className="w-4 h-4" />
+            </a>
+
+            <div className="bg-[#4A1521] text-[#FAF6EE] px-3.5 py-1.5 rounded-lg border border-[#C5A059]/40 shadow-sm flex items-center space-x-2.5 select-none transition-all duration-300 hover:shadow-md hover:border-[#C5A059]">
               <div className="flex flex-col text-left leading-tight">
-                <span className="text-[10px] font-semibold tracking-widest text-[#E6C687] uppercase font-marcellus">
+                <span className="text-[9px] font-semibold tracking-widest text-[#E6C687] uppercase font-marcellus">
                   12TH YEAR
                 </span>
-                <span className="text-[13px] font-bold tracking-wider font-cinzel text-white">
+                <span className="text-[12px] font-bold tracking-wider font-cinzel text-white">
                   2026
                 </span>
               </div>
-              <div className="text-[#C5A059] opacity-90 px-1.5 py-0.5 bg-[#3B1118] rounded-md text-xs">
+              <div className="text-[#C5A059] opacity-90 px-1 py-0.5 bg-[#3B1118] rounded-md text-[10px]">
                 ✦
               </div>
             </div>
@@ -209,23 +228,47 @@ export default function Navbar() {
               })}
             </motion.nav>
 
-            {/* MOBILE MENU BOTTOM BADGE */}
+            {/* MOBILE MENU BOTTOM BADGE & SOCIAL LINKS */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="pt-4 border-t border-[#C5A059]/20 flex items-center justify-center"
+              className="pt-4 border-t border-[#C5A059]/20 flex flex-col items-center space-y-3 w-full max-w-xs mx-auto"
             >
-              <div className="bg-[#4A1521] text-[#FAF6EE] px-5 py-2.5 rounded-lg border border-[#C5A059]/40 flex items-center space-x-3 w-full max-w-xs justify-between">
+              <div className="flex items-center justify-center space-x-3 w-full">
+                <a
+                  href="https://youtube.com/@cbkgf?si=CfwMXUSZR0YyTjA6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube Channel"
+                  className="flex-1 flex items-center justify-center space-x-2 bg-[#FF0000]/15 hover:bg-[#FF0000] text-[#4A1521] hover:text-white border border-[#FF0000]/40 py-2 rounded-xl text-xs font-bold font-cinzel transition-all shadow-sm"
+                >
+                  <YoutubeIcon className="w-4 h-4 text-[#FF0000]" />
+                  <span>YOUTUBE</span>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/choklatyboyzkgf?igsh=MTVqOGllc3FjaGdlag=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram Page"
+                  className="flex-1 flex items-center justify-center space-x-2 bg-[#E1306C]/15 hover:bg-[#E1306C] text-[#4A1521] hover:text-white border border-[#E1306C]/40 py-2 rounded-xl text-xs font-bold font-cinzel transition-all shadow-sm"
+                >
+                  <InstagramIcon className="w-4 h-4 text-[#E1306C]" />
+                  <span>INSTAGRAM</span>
+                </a>
+              </div>
+
+              <div className="bg-[#4A1521] text-[#FAF6EE] px-5 py-2.5 rounded-lg border border-[#C5A059]/40 flex items-center space-x-3 w-full justify-between">
                 <div className="flex flex-col text-left">
                   <span className="text-[11px] font-semibold tracking-widest text-[#E6C687] uppercase font-marcellus">
                     12TH YEAR
                   </span>
-                  <span className="text-[13px] font-bold tracking-wider font-cinzel text-white">
-                    2026
+                  <span className="text-sm font-bold tracking-wider font-cinzel text-white">
+                    2026 EDITION
                   </span>
                 </div>
-                <div className="text-[#C5A059] text-xs">
+                <div className="text-[#C5A059] opacity-90 px-2 py-0.5 bg-[#3B1118] rounded-md text-xs">
                   ✦
                 </div>
               </div>

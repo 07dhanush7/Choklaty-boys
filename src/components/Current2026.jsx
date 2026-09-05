@@ -7,7 +7,7 @@ import HistoryTransition from './HistoryTransition';
 
 export default function Current2026() {
   return (
-    <section id="journey" className="relative w-full bg-transparent overflow-hidden pt-14 sm:pt-18 pb-12">
+    <section id="our-ganesh" className="relative w-full bg-transparent overflow-hidden pt-14 sm:pt-18 pb-12">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

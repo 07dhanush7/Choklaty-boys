@@ -80,14 +80,14 @@ export default function Hero() {
           className="w-full flex justify-center text-center pb-2.5 sm:pb-4 md:pb-5"
         >
           <motion.div variants={itemVariants} className="inline-flex items-center justify-center">
-            <div className="flex items-center space-x-2.5 sm:space-x-3.5 text-[#8B6B38]">
-              <div className="h-[1.5px] w-10 sm:w-20 md:w-28 lg:w-36 bg-gradient-to-r from-transparent via-[#C5A059]/70 to-[#C5A059]" />
+            <div className="flex items-center space-x-1.5 sm:space-x-3.5 text-[#8B6B38]">
+              <div className="hidden sm:block h-[1.5px] w-8 sm:w-20 md:w-28 lg:w-36 bg-gradient-to-r from-transparent via-[#C5A059]/70 to-[#C5A059]" />
               <span className="text-xs sm:text-sm text-[#C5A059]">✦</span>
-              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-extrabold tracking-[0.24em] font-cinzel text-[#8B6B38] uppercase whitespace-nowrap">
+              <span className="text-[11px] sm:text-base md:text-lg lg:text-xl font-extrabold tracking-[0.14em] sm:tracking-[0.24em] font-cinzel text-[#8B6B38] uppercase">
                 CHOKLATTY BOYZ • SINCE 2015
               </span>
               <span className="text-xs sm:text-sm text-[#C5A059]">✦</span>
-              <div className="h-[1.5px] w-10 sm:w-20 md:w-28 lg:w-36 bg-gradient-to-l from-transparent via-[#C5A059]/70 to-[#C5A059]" />
+              <div className="hidden sm:block h-[1.5px] w-8 sm:w-20 md:w-28 lg:w-36 bg-gradient-to-l from-transparent via-[#C5A059]/70 to-[#C5A059]" />
             </div>
           </motion.div>
         </motion.div>
@@ -106,7 +106,7 @@ export default function Hero() {
               style={{
                 transform: `translate3d(${mousePosition.x * -0.25}px, ${mousePosition.y * -0.25}px, 0)`
               }}
-              className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl flex items-center justify-center"
+              className="relative w-full max-w-xs sm:max-w-lg lg:max-w-xl flex items-center justify-center"
             >
               {/* BACKDROP WARM GOLDEN AMBIENT LIGHT */}
               <div className="absolute inset-0 rounded-full bg-amber-400/20 blur-3xl scale-125 pointer-events-none" />
@@ -115,7 +115,7 @@ export default function Hero() {
               <img
                 src={ganeshImg}
                 alt="Lord Ganesh 2026 Hero Idol"
-                className="w-full h-auto max-h-[48vh] sm:max-h-[58vh] md:max-h-[66vh] lg:max-h-[74vh] object-contain select-none transition-transform duration-500 hover:scale-[1.02] drop-shadow-md"
+                className="w-full h-auto max-h-[38vh] sm:max-h-[58vh] md:max-h-[66vh] lg:max-h-[74vh] object-contain select-none transition-transform duration-500 hover:scale-[1.02] drop-shadow-md"
                 style={{
                   maskImage: 'radial-gradient(ellipse 95% 95% at 50% 50%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
                   WebkitMaskImage: 'radial-gradient(ellipse 95% 95% at 50% 50%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)'
@@ -139,7 +139,7 @@ export default function Hero() {
             <div className="flex flex-col space-y-0">
               <motion.span 
                 variants={itemVariants}
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-[#4A1521] tracking-[0.18em] font-bold uppercase font-playfair"
+                className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-[#4A1521] tracking-[0.18em] font-bold uppercase font-playfair"
               >
                 OUR
               </motion.span>
@@ -147,7 +147,7 @@ export default function Hero() {
               {/* DOMINANT VISUAL FOCUS: 12TH YEAR IN RICH ANTIQUE GOLD */}
               <motion.h1 
                 variants={dominantFocusVariants}
-                className="text-[2.8rem] sm:text-[4.2rem] md:text-[5.4rem] lg:text-[6.4rem] xl:text-[7rem] leading-[0.9] font-black text-gold-gradient font-serif tracking-tight font-playfair drop-shadow-xs"
+                className="text-[2.5rem] sm:text-[4.2rem] md:text-[5.4rem] lg:text-[6.4rem] xl:text-[7rem] leading-[0.9] font-black text-gold-gradient font-serif tracking-tight font-playfair drop-shadow-xs"
               >
                 12<span className="text-[0.65em] align-top font-serif">TH</span> YEAR
               </motion.h1>
@@ -190,8 +190,11 @@ export default function Hero() {
             >
               {/* PRIMARY CTA */}
               <a
-                href="#journey"
-                onClick={handleScrollClick}
+                href="#our-ganesh"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('our-ganesh')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="group relative inline-flex items-center justify-center bg-[#4A1521] text-[#FAF6EE] px-6 py-3.5 rounded-lg border border-[#C5A059]/50 shadow-md hover:shadow-lg hover:bg-[#3D0F19] transition-all duration-300 transform hover:-translate-y-0.5 w-full sm:w-auto font-bold text-xs sm:text-sm tracking-wider uppercase font-cinzel"
               >
                 <span>ENTER THE 12TH CHAPTER</span>
@@ -201,7 +204,10 @@ export default function Hero() {
               {/* SECONDARY CTA WITH CIRCULAR ICON */}
               <a
                 href="#journey"
-                onClick={handleScrollClick}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="group inline-flex items-center justify-center bg-transparent text-[#3B2820] px-6 py-3.5 rounded-lg border border-[#C5A059] hover:border-[#4A1521] hover:bg-[#FAF6EE] transition-all duration-300 w-full sm:w-auto font-bold text-xs sm:text-sm tracking-wider uppercase font-cinzel"
               >
                 <span>EXPLORE JOURNEY</span>

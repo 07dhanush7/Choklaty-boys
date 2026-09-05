@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Current2026 from './components/Current2026';
+import HistorySection from './components/history/HistorySection';
+import MemoriesSection from './components/MemoriesSection';
+import ContactFooter from './components/ContactFooter';
 import bgMandala from './assets/background.png';
 
 export default function App() {
@@ -16,13 +19,22 @@ export default function App() {
       {/* NAVBAR */}
       <Navbar />
 
-      {/* HERO SECTION & 2026 CELEBRATION SECTION */}
+      {/* MAIN SECTIONS */}
       <main className="relative z-10">
         <Hero />
 
         {/* 2026 — OUR 12TH YEAR SECTION */}
         <Current2026 />
+
+        {/* 11 YEARS BEHIND US — HISTORICAL ARCHIVE SECTION */}
+        <HistorySection />
+
+        {/* FESTIVAL MEMORIES SECTION */}
+        <MemoriesSection />
       </main>
+
+      {/* FOOTER & CONTACT */}
+      <ContactFooter />
     </div>
   );
 }
